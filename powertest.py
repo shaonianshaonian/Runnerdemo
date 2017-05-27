@@ -8,7 +8,7 @@ MessageSum = 0
 
 url="http://112.74.234.108:8081/historicalquotation/queryHistoricalK?contractCode=Ag(T%2bD)&kType=month"
 # 定义request的body内容
-date={
+date ={
     "contractCode": "Ag(T%2bD)",
     "kType": "month"
 }
