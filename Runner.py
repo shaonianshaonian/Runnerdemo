@@ -16,7 +16,7 @@ def get_percent_time(data_list, percent):
 
 
 # 设置并发数
-thread_count = 200
+thread_count = 600
 # 所有线程花费的时间列表
 spend_time_list = []
 # 最大响应时间
@@ -36,7 +36,7 @@ except_total = 0
 # 总请求数
 total = 0
 # 请求地址，需要压力测试的接口api
-url = "https://www.jsj1314.cn:8443/openga/getAllInstIds"
+url = "http://112.74.234.108:8081/historicalquotation/nowDateTimeSharing?contractCode=Ag(T%2BD)"
 # 构造请求头
 header = {}
 # 请求参数

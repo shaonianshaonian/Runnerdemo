@@ -1,12 +1,13 @@
+# python3
 #构造性能测试基类
 import re
 import time
 import requests
-import threading
+import test
 #初始化url、method（默认get）、header（默认为空字典）等参数,
 #这里Performance类重写父类threading.Thread的__init__方法,会覆盖父类的__init__方法，
 #用super()函数可以解决了子类就算重写父类方法或属性仍然可以继续使用父类的方法和属性。
-class Performance(threading.Thread):
+class Performance(test.Thread):
     def __init__(self,url="", method="get",header={},body="",body_type="json"):
         #threading.Thread.__init__(self)
         super().__init__()
